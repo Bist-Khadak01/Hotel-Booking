@@ -1,0 +1,559 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="../output.css" rel="stylesheet">
+  <!-- swiper cdn for hero slider -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+  <!-- datepicker cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+
+
+</head>
+
+<body>
+  <!-- js implementation needed in header -->
+  <!-- NavBar -->
+  <header class="bg-white py-6 shadow-lg fixed z-50 w-full transition-all duration-500">
+    <div class="container mx-auto flex flex-col items-center gap-y-6 lg:flex-row lg:justify-between lg:gap-y-0">
+      <!-- logo -->
+      <!-- white header needed after js implementation  -->
+      <a href="/">
+        <img class="w-[160px]" src="./img/logo-dark.svg">
+      </a>
+      <nav class="text-primary flex gap-x-4 font-tertiary tracking-[3px] text-[15px] items-center uppercase lg:gap-x-8">
+        <a href="" class="hover:text-accent transition">
+          Home
+        </a>
+        <a href="" class="hover:text-accent transition">
+          Rooms
+        </a>
+        <a href="" class="hover:text-accent transition">
+          Restaurants
+        </a>
+        <a href="" class="hover:text-accent transition">
+          Spa
+        </a>
+        <a href="" class="hover:text-accent transition">
+          Contact
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="h-[600px] lg:h-[860px]">
+
+    <div class="relative h-full flex justify-center items-center">
+      <div class="z-20 text-white text-center">
+        <div class=" uppercase font-tertiary tracking-[6px] mb-5">
+          Just Enjoy and Relax
+        </div>
+        <h1 class="text-[32px] font-primary uppercase tracking-[2px] max-w-[920px] lg:text-[68px] leading-tight mb-6">
+          Your Luxary Hotel for Vacation
+        </h1>
+        <button class="btn btn-primary btn-lg mx-auto">
+          See our rooms
+        </button>
+      </div>
+      <div class="absolute top-0 w-full h-full">
+        <img class="object-cover h-full w-full" src="./img/heroSlider/1.jpg" alt="" />
+        <!-- overlay -->
+      </div>
+      <div class="absolute w-full h-full bg-black/70"></div>
+    </div>
+  </div>
+  <div class="container mx-auto relative">
+    <div class="bg-accent/20 mt-4 p-4 lg:shadow-xl lg:absolute lg:left-0 lg:right-0 lg:p-0 lg:z-30 lg:-top-12">
+      <!-- book form -->
+      <form class="h-[300px] w-full lg:h-[70px] ">
+        <div class="flex flex-col w-full h-full lg:flex-row">
+          <div class="flex-1 border-r">
+            <div class="relative flex items-center justify-end h-full">
+              <div class="absolute z-10 pr-8">
+                <div class="text-accent text-base">
+                  <img src="./img/calendar.svg">
+                </div>
+              </div>
+              <input type="text" id="checkin" placeholder="Check in" class="datepicker-input w-full h-full pl-6">
+            </div>
+          </div>
+          <div class="flex-1 border-r">
+            <div class="relative flex items-center justify-end h-full">
+              <div class="absolute z-10 pr-8">
+                <div class="text-accent text-base">
+                  <img src="./img/calendar.svg">
+                </div>
+              </div>
+              <input type="text" id="checkout" placeholder="Check out" class="datepicker-input w-full h-full pl-6">
+            </div>
+          </div>
+          <div class="flex-1 border-r">
+            <Menu as="div" class="w-full h-full bg-white relative">
+              <!-- btn -->
+              <Menu.Button id="dropdown-btn" class="w-full h-full flex items-center justify-between px-8">
+                <span>1 Adult</span>
+                <img src="./img/dropdown.svg" />
+              </Menu.Button>
+
+              <!-- menu items -->
+              <Menu.Items id="dropdown-items" as="ul" class="bg-white absolute w-full flex flex-col z-40">
+                <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">1 Adult</div>
+                <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">2 Adult</div>
+                <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">3 Adult</div>
+                <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">4 Adult</div>
+                <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">5 Adult</div>
+              </Menu.Items>
+            </Menu>
+          </div>
+          <div class="flex-1 border-r">
+            <Menu as="div" class="w-full h-full bg-white relative">
+              <!-- btn -->
+              <Menu.Button id="dropdown-btn-kids" class="w-full h-full flex items-center justify-between px-8">
+                <span>0 Kid</span>
+                <img src="./img/dropdown.svg" />
+              </Menu.Button>
+
+              <!-- menu items -->
+              <Menu.Items id="dropdown-items-kids" as="ul" class="bg-white absolute w-full flex flex-col z-40">
+                <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">0 Kid</div>
+                <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">1 Kid</div>
+                <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">2 Kids</div>
+                <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">3 Kids</div>
+                <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">4 Kids</div>
+              </Menu.Items>
+            </Menu>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Check now
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- rooms -->
+  <section class="py-24 ">
+    <div class="container mx-auto lg:px-0">
+      <!-- grid -->
+      <div class="grid grid-cols-1 max-w-sm mx-auto gap-[30px] lg:grid-cols-3 lg:max-w-none lg:mx-0">
+        <!-- room -->
+        <div class="bg-white shadow-2xl min-h-[500px] group">
+          <!-- image -->
+          <div class="overflow-hidden">
+            <img class="group-hover:scale-110 transition-all duration-300 w-full" src="./img/rooms/1.png" alt="" />
+          </div>
+          <!-- details -->
+          <div
+            class="bg-white shadow-lg max-w-[300px] mx-auto h-[60px] -translate-y-1/2 flex justify-center items-center uppercase font-tertiary tracking-[1px] font-semibold text-base">
+            <div class="flex justify-between w-[80%]">
+              <!-- size -->
+              <div class="flex item-center gap-x-2">
+                <div class="text-accent">
+                  <img src="./img/fullScreen.svg" class="text-[15px]" />
+                </div>
+                <div class="flex gap-x-1">
+                  <div>size</div>
+                  <div>50 m2</div>
+                </div>
+              </div>
+              <!-- room capacity -->
+              <div class="flex item-center gap-x-2">
+                <div class="text-accent">
+                  <img src="./img/people.svg" />
+                </div>
+                <div class="flex gap-x-1">
+                  <div>max people</div>
+                  <div>5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- name and description -->
+          <div class=" text-center">
+            <a href="/room/1">
+              <h3 class="h3">Superior Room</h3>
+            </a>
+            <p class="max-w-[300px] mx-auto mb-3 lg:mb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea
+            </p>
+          </div>
+          <!-- btn -->
+          <a href="/room/1" class="btn btn-secondary btn-sm max-w-[240px] mx-auto">
+            Book now from $115
+          </a>
+        </div>
+
+        <div class="bg-white shadow-2xl min-h-[500px] group">
+          <!-- image -->
+          <div class="overflow-hidden">
+            <img class="group-hover:scale-110 transition-all duration-300 w-full" src="./img/rooms/2.png" alt="" />
+          </div>
+          <!-- details -->
+          <div
+            class="bg-white shadow-lg max-w-[300px] mx-auto h-[60px] -translate-y-1/2 flex justify-center items-center uppercase font-tertiary tracking-[1px] font-semibold text-base">
+            <div class="flex justify-between w-[80%]">
+              <!-- size -->
+              <div class="flex item-center gap-x-2">
+                <div class="text-accent">
+                  <img src="./img/fullScreen.svg" class="text-[15px]" />
+                </div>
+                <div class="flex gap-x-1">
+                  <div>size</div>
+                  <div>50 m2</div>
+                </div>
+              </div>
+              <!-- room capacity -->
+              <div class="flex item-center gap-x-2">
+                <div class="text-accent">
+                  <img src="./img/people.svg" />
+                </div>
+                <div class="flex gap-x-1">
+                  <div>max people</div>
+                  <div>5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- name and description -->
+          <div class=" text-center">
+            <a href="/room/1">
+              <h3 class="h3">Superior Room</h3>
+            </a>
+            <p class="max-w-[300px] mx-auto mb-3 lg:mb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea
+            </p>
+          </div>
+          <!-- btn -->
+          <a href="/room/1" class="btn btn-secondary btn-sm max-w-[240px] mx-auto">
+            Book now from $115
+          </a>
+        </div>
+
+        <div class="bg-white shadow-2xl min-h-[500px] group">
+          <!-- image -->
+          <div class="overflow-hidden">
+            <img class="group-hover:scale-110 transition-all duration-300 w-full" src="./img/rooms/3.png" alt="" />
+          </div>
+          <!-- details -->
+          <div
+            class="bg-white shadow-lg max-w-[300px] mx-auto h-[60px] -translate-y-1/2 flex justify-center items-center uppercase font-tertiary tracking-[1px] font-semibold text-base">
+            <div class="flex justify-between w-[80%]">
+              <!-- size -->
+              <div class="flex item-center gap-x-2">
+                <div class="text-accent">
+                  <img src="./img/fullScreen.svg" class="text-[15px]" />
+                </div>
+                <div class="flex gap-x-1">
+                  <div>size</div>
+                  <div>50 m2</div>
+                </div>
+              </div>
+              <!-- room capacity -->
+              <div class="flex item-center gap-x-2">
+                <div class="text-accent">
+                  <img src="./img/people.svg" />
+                </div>
+                <div class="flex gap-x-1">
+                  <div>max people</div>
+                  <div>5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- name and description -->
+          <div class=" text-center">
+            <a href="/room/1">
+              <h3 class="h3">Superior Room</h3>
+            </a>
+            <p class="max-w-[300px] mx-auto mb-3 lg:mb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea
+            </p>
+          </div>
+          <!-- btn -->
+          <a href="/room/1" class="btn btn-secondary btn-sm max-w-[240px] mx-auto">
+            Book now from $115
+          </a>
+        </div>
+
+        <div class="bg-white shadow-2xl min-h-[500px] group">
+          <!-- image -->
+          <div class="overflow-hidden">
+            <img class="group-hover:scale-110 transition-all duration-300 w-full" src="./img/rooms/4.png" alt="" />
+          </div>
+          <!-- details -->
+          <div
+            class="bg-white shadow-lg max-w-[300px] mx-auto h-[60px] -translate-y-1/2 flex justify-center items-center uppercase font-tertiary tracking-[1px] font-semibold text-base">
+            <div class="flex justify-between w-[80%]">
+              <!-- size -->
+              <div class="flex item-center gap-x-2">
+                <div class="text-accent">
+                  <img src="./img/fullScreen.svg" class="text-[15px]" />
+                </div>
+                <div class="flex gap-x-1">
+                  <div>size</div>
+                  <div>50 m2</div>
+                </div>
+              </div>
+              <!-- room capacity -->
+              <div class="flex item-center gap-x-2">
+                <div class="text-accent">
+                  <img src="./img/people.svg" />
+                </div>
+                <div class="flex gap-x-1">
+                  <div>max people</div>
+                  <div>5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- name and description -->
+          <div class=" text-center">
+            <a href="/room/1">
+              <h3 class="h3">Superior Room</h3>
+            </a>
+            <p class="max-w-[300px] mx-auto mb-3 lg:mb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea
+            </p>
+          </div>
+          <!-- btn -->
+          <a href="/room/1" class="btn btn-secondary btn-sm max-w-[240px] mx-auto">
+            Book now from $115
+          </a>
+        </div>
+
+        <div class="bg-white shadow-2xl min-h-[500px] group">
+          <!-- image -->
+          <div class="overflow-hidden">
+            <img class="group-hover:scale-110 transition-all duration-300 w-full" src="./img/rooms/5.png" alt="" />
+          </div>
+          <!-- details -->
+          <div
+            class="bg-white shadow-lg max-w-[300px] mx-auto h-[60px] -translate-y-1/2 flex justify-center items-center uppercase font-tertiary tracking-[1px] font-semibold text-base">
+            <div class="flex justify-between w-[80%]">
+              <!-- size -->
+              <div class="flex item-center gap-x-2">
+                <div class="text-accent">
+                  <img src="./img/fullScreen.svg" class="text-[15px]" />
+                </div>
+                <div class="flex gap-x-1">
+                  <div>size</div>
+                  <div>50 m2</div>
+                </div>
+              </div>
+              <!-- room capacity -->
+              <div class="flex item-center gap-x-2">
+                <div class="text-accent">
+                  <img src="./img/people.svg" />
+                </div>
+                <div class="flex gap-x-1">
+                  <div>max people</div>
+                  <div>5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- name and description -->
+          <div class=" text-center">
+            <a href="/room/1">
+              <h3 class="h3">Superior Room</h3>
+            </a>
+            <p class="max-w-[300px] mx-auto mb-3 lg:mb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea
+            </p>
+          </div>
+          <!-- btn -->
+          <a href="/room/1" class="btn btn-secondary btn-sm max-w-[240px] mx-auto">
+            Book now from $115
+          </a>
+        </div>
+
+        <div class="bg-white shadow-2xl min-h-[500px] group">
+          <!-- image -->
+          <div class="overflow-hidden">
+            <img class="group-hover:scale-110 transition-all duration-300 w-full" src="./img/rooms/6.png" alt="" />
+          </div>
+          <!-- details -->
+          <div
+            class="bg-white shadow-lg max-w-[300px] mx-auto h-[60px] -translate-y-1/2 flex justify-center items-center uppercase font-tertiary tracking-[1px] font-semibold text-base">
+            <div class="flex justify-between w-[80%]">
+              <!-- size -->
+              <div class="flex item-center gap-x-2">
+                <div class="text-accent">
+                  <img src="./img/fullScreen.svg" class="text-[15px]" />
+                </div>
+                <div class="flex gap-x-1">
+                  <div>size</div>
+                  <div>50 m2</div>
+                </div>
+              </div>
+              <!-- room capacity -->
+              <div class="flex item-center gap-x-2">
+                <div class="text-accent">
+                  <img src="./img/people.svg" />
+                </div>
+                <div class="flex gap-x-1">
+                  <div>max people</div>
+                  <div>5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- name and description -->
+          <div class=" text-center">
+            <a href="/room/1">
+              <h3 class="h3">Superior Room</h3>
+            </a>
+            <p class="max-w-[300px] mx-auto mb-3 lg:mb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea
+            </p>
+          </div>
+          <!-- btn -->
+          <a href="/room/1" class="btn btn-secondary btn-sm max-w-[240px] mx-auto">
+            Book now from $115
+          </a>
+        </div>
+
+        <div class="bg-white shadow-2xl min-h-[500px] group">
+          <!-- image -->
+          <div class="overflow-hidden">
+            <img class="group-hover:scale-110 transition-all duration-300 w-full" src="./img/rooms/7.png" alt="" />
+          </div>
+          <!-- details -->
+          <div
+            class="bg-white shadow-lg max-w-[300px] mx-auto h-[60px] -translate-y-1/2 flex justify-center items-center uppercase font-tertiary tracking-[1px] font-semibold text-base">
+            <div class="flex justify-between w-[80%]">
+              <!-- size -->
+              <div class="flex item-center gap-x-2">
+                <div class="text-accent">
+                  <img src="./img/fullScreen.svg" class="text-[15px]" />
+                </div>
+                <div class="flex gap-x-1">
+                  <div>size</div>
+                  <div>50 m2</div>
+                </div>
+              </div>
+              <!-- room capacity -->
+              <div class="flex item-center gap-x-2">
+                <div class="text-accent">
+                  <img src="./img/people.svg" />
+                </div>
+                <div class="flex gap-x-1">
+                  <div>max people</div>
+                  <div>5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- name and description -->
+          <div class=" text-center">
+            <a href="/room/1">
+              <h3 class="h3">Superior Room</h3>
+            </a>
+            <p class="max-w-[300px] mx-auto mb-3 lg:mb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea
+            </p>
+          </div>
+          <!-- btn -->
+          <a href="/room/1" class="btn btn-secondary btn-sm max-w-[240px] mx-auto">
+            Book now from $115
+          </a>
+        </div>
+
+        <div class="bg-white shadow-2xl min-h-[500px] group">
+          <!-- image -->
+          <div class="overflow-hidden">
+            <img class="group-hover:scale-110 transition-all duration-300 w-full" src="./img/rooms/8.png" alt="" />
+          </div>
+          <!-- details -->
+          <div
+            class="bg-white shadow-lg max-w-[300px] mx-auto h-[60px] -translate-y-1/2 flex justify-center items-center uppercase font-tertiary tracking-[1px] font-semibold text-base">
+            <div class="flex justify-between w-[80%]">
+              <!-- size -->
+              <div class="flex item-center gap-x-2">
+                <div class="text-accent">
+                  <img src="./img/fullScreen.svg" class="text-[15px]" />
+                </div>
+                <div class="flex gap-x-1">
+                  <div>size</div>
+                  <div>50 m2</div>
+                </div>
+              </div>
+              <!-- room capacity -->
+              <div class="flex item-center gap-x-2">
+                <div class="text-accent">
+                  <img src="./img/people.svg" />
+                </div>
+                <div class="flex gap-x-1">
+                  <div>max people</div>
+                  <div>5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- name and description -->
+          <div class=" text-center">
+            <a href="/room/1">
+              <h3 class="h3">Superior Room</h3>
+            </a>
+            <p class="max-w-[300px] mx-auto mb-3 lg:mb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea
+            </p>
+          </div>
+          <!-- btn -->
+          <a href="/room/1" class="btn btn-secondary btn-sm max-w-[240px] mx-auto">
+            Book now from $115
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer class="bg-primary py-12">
+    <div class="container mx-auto text-white text-center">
+      <!-- logo -->
+      Copyright &copy; 2025. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- datapicker cdn -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dateOptions = {
+        altInput: false,
+        altFormat: "F j, Y",
+        dateFormat: "Y-m-d",
+        allowInput: true,
+        wrap: false,
+        monthSelectorType: "dropdown",
+        prevArrow: "<",
+        nextArrow: ">",
+
+        disableMobile: true
+      };
+
+      flatpickr("#checkin", dateOptions);
+      const a = flatpickr("#checkout", dateOptions);
+      console.log(a)
+      console.log("hello reached here")
+    })
+  </script>
+</body>
+
+</html>

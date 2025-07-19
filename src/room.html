@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="../output.css" rel="stylesheet">
+  <!-- swiper cdn for hero slider -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+  <!-- datepicker cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+
+
+</head>
+
+<body>
+  <!-- js implementation needed in header -->
+  <!-- NavBar -->
+  <header class="bg-white py-6 shadow-lg fixed z-50 w-full transition-all duration-500">
+    <div class="container mx-auto flex flex-col items-center gap-y-6 lg:flex-row lg:justify-between lg:gap-y-0">
+      <!-- logo -->
+      <!-- white header needed after js implementation  -->
+      <a href="/">
+        <img class="w-[160px]" src="./img/logo-dark.svg">
+      </a>
+      <nav class="text-primary flex gap-x-4 font-tertiary tracking-[3px] text-[15px] items-center uppercase lg:gap-x-8">
+        <a href="" class="hover:text-accent transition">
+          Home
+        </a>
+        <a href="" class="hover:text-accent transition">
+          Rooms
+        </a>
+        <a href="" class="hover:text-accent transition">
+          Restaurants
+        </a>
+        <a href="" class="hover:text-accent transition">
+          Spa
+        </a>
+        <a href="" class="hover:text-accent transition">
+          Contact
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <!-- banner -->
+    <div class="bg-room bg-cover bg-center h-[560px] relative flex justify-center items-center">
+      <!-- overlay -->
+      <div class="absolute w-full h-full bg-black/70"></div>
+      <!-- title -->x
+      <h1 class="text-6xl text-white z-20 font-primary text-center">
+        Superior Room Details
+      </h1>
+    </div>
+    <div class="container mx-auto">
+      <div class="flex flex-col lg:flex-row h-full py-24">
+        <!-- left -->
+        <div class="w-full h-full lg:w-[60%] px-6">
+          <h2 class="h2">Superior Room</h2>
+          <p class="mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde
+            veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus,
+            corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.</p>
+          <img class="mb-8" src="./img/rooms/1-lg.png" />
+          <!-- facilities -->
+          <div class="mt-12">
+            <h3 class="h3 mb-3">Room Facilities</h3>
+            <p class="mb-12">
+              hello i am khadak this is too long text description anything to
+              say ... you can say here :Laugh
+            </p>
+            <!-- grid -->
+            <div class="grid grid-cols-3 gap-6 mb-12">
+              <div class="flex items-center gap-x-3 flex-1">
+                <div class="text-3xl text-accent"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 640 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M634.91 154.88C457.74-8.99 182.19-8.93 5.09 154.88c-6.66 6.16-6.79 16.59-.35 22.98l34.24 33.97c6.14 6.1 16.02 6.23 22.4.38 145.92-133.68 371.3-133.71 517.25 0 6.38 5.85 16.26 5.71 22.4-.38l34.24-33.97c6.43-6.39 6.3-16.82-.36-22.98zM320 352c-35.35 0-64 28.65-64 64s28.65 64 64 64 64-28.65 64-64-28.65-64-64-64zm202.67-83.59c-115.26-101.93-290.21-101.82-405.34 0-6.9 6.1-7.12 16.69-.57 23.15l34.44 33.99c6 5.92 15.66 6.32 22.05.8 83.95-72.57 209.74-72.41 293.49 0 6.39 5.52 16.05 5.13 22.05-.8l34.44-33.99c6.56-6.46 6.33-17.06-.56-23.15z">
+                    </path>
+                  </svg></div>
+                <div class="text-base">Wifi</div>
+              </div>
+              <div class="flex items-center gap-x-3 flex-1">
+                <div class="text-3xl text-accent"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 640 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z">
+                    </path>
+                  </svg></div>
+                <div class="text-base">Coffee</div>
+              </div>
+              <div class="flex items-center gap-x-3 flex-1">
+                <div class="text-3xl text-accent"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M32,384a95.4,95.4,0,0,0,32,71.09V496a16,16,0,0,0,16,16h32a16,16,0,0,0,16-16V480H384v16a16,16,0,0,0,16,16h32a16,16,0,0,0,16-16V455.09A95.4,95.4,0,0,0,480,384V336H32ZM496,256H80V69.25a21.26,21.26,0,0,1,36.28-15l19.27,19.26c-13.13,29.88-7.61,59.11,8.62,79.73l-.17.17A16,16,0,0,0,144,176l11.31,11.31a16,16,0,0,0,22.63,0L283.31,81.94a16,16,0,0,0,0-22.63L272,48a16,16,0,0,0-22.62,0l-.17.17c-20.62-16.23-49.83-21.75-79.73-8.62L150.22,20.28A69.25,69.25,0,0,0,32,69.25V256H16A16,16,0,0,0,0,272v16a16,16,0,0,0,16,16H496a16,16,0,0,0,16-16V272A16,16,0,0,0,496,256Z">
+                    </path>
+                  </svg></div>
+                <div class="text-base">Bath</div>
+              </div>
+              <div class="flex items-center gap-x-3 flex-1">
+                <div class="text-3xl text-accent"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM240 320h-48v48c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16V144c0-8.8 7.2-16 16-16h96c52.9 0 96 43.1 96 96s-43.1 96-96 96zm0-128h-48v64h48c17.6 0 32-14.4 32-32s-14.4-32-32-32z">
+                    </path>
+                  </svg></div>
+                <div class="text-base">Parking Space</div>
+              </div>
+              <div class="flex items-center gap-x-3 flex-1">
+                <div class="text-3xl text-accent"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 640 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M624 416h-16c-26.04 0-45.8-8.42-56.09-17.9-8.9-8.21-19.66-14.1-31.77-14.1h-16.3c-12.11 0-22.87 5.89-31.77 14.1C461.8 407.58 442.04 416 416 416s-45.8-8.42-56.09-17.9c-8.9-8.21-19.66-14.1-31.77-14.1h-16.3c-12.11 0-22.87 5.89-31.77 14.1C269.8 407.58 250.04 416 224 416s-45.8-8.42-56.09-17.9c-8.9-8.21-19.66-14.1-31.77-14.1h-16.3c-12.11 0-22.87 5.89-31.77 14.1C77.8 407.58 58.04 416 32 416H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h16c38.62 0 72.72-12.19 96-31.84 23.28 19.66 57.38 31.84 96 31.84s72.72-12.19 96-31.84c23.28 19.66 57.38 31.84 96 31.84s72.72-12.19 96-31.84c23.28 19.66 57.38 31.84 96 31.84h16c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zm-400-32v-96h192v96c19.12 0 30.86-6.16 34.39-9.42 9.17-8.46 19.2-14.34 29.61-18.07V128c0-17.64 14.36-32 32-32s32 14.36 32 32v16c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-16c0-52.94-43.06-96-96-96s-96 43.06-96 96v96H224v-96c0-17.64 14.36-32 32-32s32 14.36 32 32v16c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-16c0-52.94-43.06-96-96-96s-96 43.06-96 96v228.5c10.41 3.73 20.44 9.62 29.61 18.07 3.53 3.27 15.27 9.43 34.39 9.43z">
+                    </path>
+                  </svg></div>
+                <div class="text-base">Swimming Pool</div>
+              </div>
+              <div class="flex items-center gap-x-3 flex-1">
+                <div class="text-3xl text-accent"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M488.56 23.44a80 80 0 0 0-113.12 0l-352 352a80 80 0 1 0 113.12 113.12l352-352a80 80 0 0 0 0-113.12zm-49.93 95.19c-19.6 19.59-37.52 22.67-51.93 25.14C373.76 146 364.4 147.6 352 160s-14 21.76-16.23 34.71c-2.48 14.4-5.55 32.33-25.15 51.92s-37.52 22.67-51.92 25.15C245.75 274 236.4 275.6 224 288s-14 21.75-16.23 34.7c-2.47 14.4-5.54 32.33-25.14 51.92s-37.53 22.68-51.93 25.15C117.76 402 108.4 403.6 96 416a16 16 0 0 1-22.63-22.63c19.6-19.59 37.52-22.67 51.92-25.14 13-2.22 22.3-3.82 34.71-16.23s14-21.75 16.22-34.7c2.48-14.4 5.55-32.33 25.15-51.92s37.52-22.67 51.92-25.14c13-2.22 22.3-3.83 34.7-16.23s14-21.76 16.24-34.71c2.47-14.4 5.54-32.33 25.14-51.92s37.52-22.68 51.92-25.15C394.24 110 403.59 108.41 416 96a16 16 0 0 1 22.63 22.63zM31.44 322.18L322.18 31.44l-11.54-11.55c-25-25-63.85-26.66-86.79-3.72L16.17 223.85c-22.94 22.94-21.27 61.79 3.72 86.78zm449.12-132.36L189.82 480.56l11.54 11.55c25 25 63.85 26.66 86.79 3.72l207.68-207.68c22.94-22.94 21.27-61.79-3.72-86.79z">
+                    </path>
+                  </svg></div>
+                <div class="text-base">Breakfast</div>
+              </div>
+              <div class="flex items-center gap-x-3 flex-1">
+                <div class="text-3xl text-accent"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M432 304c0 114.9-93.1 208-208 208S16 418.9 16 304c0-104 76.3-190.2 176-205.5V64h-28c-6.6 0-12-5.4-12-12V12c0-6.6 5.4-12 12-12h120c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-28v34.5c37.5 5.8 71.7 21.6 99.7 44.6l27.5-27.5c4.7-4.7 12.3-4.7 17 0l28.3 28.3c4.7 4.7 4.7 12.3 0 17l-29.4 29.4-.6.6C419.7 223.3 432 262.2 432 304zm-176 36V188.5c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12V340c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z">
+                    </path>
+                  </svg></div>
+                <div class="text-base">GYM</div>
+              </div>
+              <div class="flex items-center gap-x-3 flex-1">
+                <div class="text-3xl text-accent"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M296 464h-56V338.78l168.74-168.73c15.52-15.52 4.53-42.05-17.42-42.05H24.68c-21.95 0-32.94 26.53-17.42 42.05L176 338.78V464h-56c-22.09 0-40 17.91-40 40 0 4.42 3.58 8 8 8h240c4.42 0 8-3.58 8-8 0-22.09-17.91-40-40-40zM432 0c-62.61 0-115.35 40.2-135.18 96h52.54c16.65-28.55 47.27-48 82.64-48 52.93 0 96 43.06 96 96s-43.07 96-96 96c-14.04 0-27.29-3.2-39.32-8.64l-35.26 35.26C379.23 279.92 404.59 288 432 288c79.53 0 144-64.47 144-144S511.53 0 432 0z">
+                    </path>
+                  </svg></div>
+                <div class="text-base">Drinks</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="w-full h-full lg:w-[40%]">
+          <!-- reservation -->
+          <div class="py-8 px-6 bg-accent/20 mb-12">
+            <div class="flex flex-col space-y-4 mb-4">
+              <h3 class="h3">Your reservation</h3>
+              <div class="h-[60px]">
+                <div class="relative flex items-center justify-end h-full">
+                  <div class="absolute z-10 pr-8">
+                    <div class="text-accent text-base">
+                      <img src="./img/calendar.svg">
+                    </div>
+                  </div>
+                  <input type="text" id="checkin" placeholder="Check in" class="datepicker-input w-full h-full pl-6">
+                </div>
+              </div>
+              <div class="h-[60px]">
+                <div class="relative flex items-center justify-end h-full">
+                  <div class="absolute z-10 pr-8">
+                    <div class="text-accent text-base">
+                      <img src="./img/calendar.svg">
+                    </div>
+                  </div>
+                  <input type="text" id="checkout" placeholder="Check out" class="datepicker-input w-full h-full pl-6">
+                </div>
+              </div>
+              <div class="h-[60px]">
+                <Menu as="div" class="w-full h-full bg-white relative">
+                  <!-- btn -->
+                  <Menu.Button id="dropdown-btn" class="w-full h-full flex items-center justify-between px-8">
+                    <span>1 Adult</span>
+                    <img src="./img/dropdown.svg" />
+                  </Menu.Button>
+
+                  <!-- menu items -->
+                  <Menu.Items id="dropdown-items" as="ul" class="bg-white absolute w-full flex flex-col z-40">
+                    <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">1 Adult</div>
+                    <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">2 Adult</div>
+                    <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">3 Adult</div>
+                    <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">4 Adult</div>
+                    <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">5 Adult</div>
+                  </Menu.Items>
+                </Menu>
+              </div>
+              <div class="h-[60px]">
+                <Menu as="div" class="w-full h-full bg-white relative">
+                  <!-- btn -->
+                  <Menu.Button id="dropdown-btn-kids" class="w-full h-full flex items-center justify-between px-8">
+                    <span>0 Kid</span>
+                    <img src="./img/dropdown.svg" />
+                  </Menu.Button>
+
+                  <!-- menu items -->
+                  <Menu.Items id="dropdown-items-kids" as="ul" class="bg-white absolute w-full flex flex-col z-40">
+                    <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">0 Kid</div>
+                    <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">1 Kid</div>
+                    <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">2 Kids</div>
+                    <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">3 Kids</div>
+                    <div as="li" class="border-b last-of-type:border-b-0 h-12 hover:bg-accent hover:text-white w-full flex
+                  justify-center items-center cursor-pointer">4 Kids</div>
+                  </Menu.Items>
+                </Menu>
+              </div>
+
+            </div>
+            <button class="btn btn-lg btn-primary w-full">
+              Book now for $499
+            </button>
+          </div>
+          <div>
+            <h3 class="h3">Hotel rules</h3>
+            <p class="mb-6">
+              your hotel roles belongs here ... married couples are not
+              allowed in our hotel because they always fight and broke our
+              hotel's inventory :Laugh other rules are below also hehehehe
+              :laugh
+            </p>
+            <ul class="flex flex-col gap-y-4">
+              <li class="flex item-center gap-x-4">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                  class="text-accent" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                  </path>
+                </svg>
+                Check-in: 3:00pm -9:00pm
+              </li>
+              <li class="flex item-center gap-x-4">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                  class="text-accent" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                  </path>
+                </svg>
+                Check-out: 11:30am
+              </li>
+              <li class="flex item-center gap-x-4">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                  class="text-accent" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                  </path>
+                </svg>
+                No pets
+              </li>
+              <li class="flex item-center gap-x-4">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                  class="text-accent" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                  </path>
+                </svg>
+                No smoking
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <footer class="bg-primary py-12">
+    <div class="container mx-auto text-white text-center">
+      <!-- logo -->
+      Copyright &copy; 2025. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- datapicker cdn -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dateOptions = {
+        altInput: false,
+        altFormat: "F j, Y",
+        dateFormat: "Y-m-d",
+        allowInput: true,
+        wrap: false,
+        monthSelectorType: "dropdown",
+        prevArrow: "<",
+        nextArrow: ">",
+
+        disableMobile: true
+      };
+
+      flatpickr("#checkin", dateOptions);
+      const a = flatpickr("#checkout", dateOptions);
+      console.log(a)
+      console.log("hello reached here")
+    })
+  </script>
+</body>
+
+</html>

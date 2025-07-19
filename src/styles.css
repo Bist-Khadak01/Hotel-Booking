@@ -1,0 +1,69 @@
+/* Calendar popup */
+.flatpickr-calendar {
+  background: white;
+  border: 1px solid #aa8453;
+  border-radius: 0;
+  font-family: "Barlow";
+  font-size: 0.9rem;
+  z-index: 9999 !important;
+}
+
+/* Header background for month */
+.flatpickr-months {
+  background: #aa8453;
+  color: white;
+  padding: 0.3rem 0;
+}
+
+/* Month label styling */
+.flatpickr-month {
+  font-weight: 500;
+}
+
+/* Navigation arrows */
+.flatpickr-prev-month svg,
+.flatpickr-next-month svg,
+.flatpickr-prev-month:after,
+.flatpickr-next-month:after {
+  color: white;
+}
+
+/* Input container */
+.flatpickr-input,
+.flatpickr-wrapper {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+/* Selected day styles */
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange {
+  background: #aa8453;
+  border-radius: 0;
+}
+.flatpickr-day.selected:hover,
+.flatpickr-day.startRange:hover,
+.flatpickr-day.endRange:hover {
+  background: #906d40;
+}
+
+/* Hovered days */
+.flatpickr-day:hover {
+  border-radius: 0;
+}
+
+/* Remove default triangle */
+.flatpickr-calendar::before,
+.flatpickr-calendar::after {
+  display: none;
+}
+
+.flatpickr-calendar {
+  z-index: 9999 !important;
+}
+
+.bg-room {
+  background-image: url("./img/room.jpg");
+}
